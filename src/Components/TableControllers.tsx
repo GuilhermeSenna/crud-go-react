@@ -5,24 +5,29 @@ import { GridSelectionModel } from '@mui/x-data-grid'
 
 interface ITableControllers {
   selectionModel?: GridSelectionModel
-  toggleCustomerDialog: () => void
+  toggleCustomerHandleDialog: () => void
+  deleteMultipleCustomers: () => void
 }
 
 const TableControllers = ({
   selectionModel,
-  toggleCustomerDialog
+  toggleCustomerHandleDialog,
+  deleteMultipleCustomers
 }: ITableControllers): JSX.Element => {
-  console.log(selectionModel)
-
   return (
     <Stack direction="row" spacing={1} sx={{ mb: 1 }}>
-      <Button variant="outlined" color="success" onClick={toggleCustomerDialog}>
+      <Button
+        variant="outlined"
+        color="success"
+        onClick={toggleCustomerHandleDialog}
+      >
         Add customer
       </Button>
       <Button
         variant="outlined"
         color="error"
         disabled={!selectionModel?.length}
+        onClick={deleteMultipleCustomers}
       >
         Delete customers
       </Button>

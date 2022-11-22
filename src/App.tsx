@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { Typography } from '@mui/material'
-import Table from './Components/Table'
+import Table from './components/Table'
 
 const App = (): JSX.Element => {
   return (
