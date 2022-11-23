@@ -1,3 +1,5 @@
+# golang-api-test
+
 #### Crud performed using the Go language with Gin (WEB framework) and Gorm (ORM) in PostgreSQL database.
 
 ---
@@ -23,4 +25,3 @@
   - email (string)
   - password (string)
 - (PUT) /customers/:id - Edit a customer
-- (DELETE) /customers/:id - Delete a customer
