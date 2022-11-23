@@ -8,6 +8,7 @@
 
 #### Which ports will be used?
 
+- 3000 for ReactJS interface.
 - 5432 for PostgreSQL database.
 - For the server it can be defined dynamically in the .env with the API_PORT variable
 
